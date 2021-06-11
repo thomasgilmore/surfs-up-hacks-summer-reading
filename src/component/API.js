@@ -26,7 +26,10 @@ class API extends Component {
             books.forEach(book => {
                 let bookISBN = book.primary_isbn10;
                 let bookCover = book.book_image;
-                const bookItem = <Book key={bookISBN} img={bookCover} />
+                let bookTitle = book.title;
+                let bookAuthor = book.author;
+                let amazonLink = book.amazon_product_url;
+                const bookItem = <Book key={bookISBN} img={bookCover} bookTitle={bookTitle} bookAuthor={bookAuthor} amazonLink={amazonLink} />
                 booksRows.push(bookItem);
             });
 

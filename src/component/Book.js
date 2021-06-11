@@ -6,6 +6,8 @@ class Book extends React.Component {
         return (
             <div>
                 <img src={this.props.img} alt="Book Cover" className="bookCover" />
+                <p>{this.props.bookTitle}</p>
+                <p>{this.props.bookAuthor}</p>
             </div>
         )
     }
