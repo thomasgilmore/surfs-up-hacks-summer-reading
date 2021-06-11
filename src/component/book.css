@@ -1,4 +1,17 @@
+.book {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
 .bookCover {
+    margin: auto;
     height: 300px;
     width: 202px;
+}
+
+.bookTitle, .bookAuthor {
+    margin: 2.5px auto;
+    text-align: center;
 }
