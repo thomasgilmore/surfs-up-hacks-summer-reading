@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Book from './Book';
+import Title from './Title';
+import Footer from './Footer';
+import './api.css';
+
 
 class API extends Component {
     constructor(props) {
@@ -48,7 +52,11 @@ class API extends Component {
     render() {
         return (
             <div>
-                {this.state.booksRows}
+                <Title />
+                <div className="booksRowDiv">
+                    {this.state.booksRows}
+                </div>
+                <Footer />
             </div>
         )
     }
