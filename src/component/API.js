@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import Book from './Book';
 
 class API extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            apiResponse: ''
+            apiResponse: [],
+            books: [],
+            booksRows: []
         };
         this.fetchAPI = this.fetchAPI.bind(this);
     }
@@ -16,8 +19,22 @@ class API extends Component {
         .then(res => {
             console.log(res.data);
             let apiResponse = res.data;
+            let books = apiResponse.results.books;
+            console.log(books);
+            let booksRows = [];
 
-            this.setState({ apiResponse });
+            books.forEach(book => {
+                let bookISBN = book.primary_isbn10;
+                let bookCover = book.book_image;
+                const bookItem = <Book key={bookISBN} img={bookCover} />
+                booksRows.push(bookItem);
+            });
+
+            this.setState({ 
+                apiResponse,
+                books,
+                booksRows
+            });
         });
     }
 
@@ -28,7 +45,7 @@ class API extends Component {
     render() {
         return (
             <div>
-                Test
+                {this.state.booksRows}
             </div>
         )
     }
