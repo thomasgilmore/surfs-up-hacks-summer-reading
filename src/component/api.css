@@ -1,11 +1,32 @@
 body {
-    background-color: #d5cfb9;
+    background-color: #f8f8ff;
 }
 
 .booksRowDiv {
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 25px;
+    grid-gap: 15px;
     margin: 10px auto;
     width: 100%;
+}
+
+@media (min-width: 200px) {
+    .booksRowDiv {
+        display: inline-grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .booksRowDiv {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .booksRowDiv {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+    }
 }
