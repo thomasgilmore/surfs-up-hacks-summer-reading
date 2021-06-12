@@ -1,6 +1,6 @@
 # Surfs Up Hacks - Summer Reading
 
-This is my Surfs Up Hacks Project. I'm using [NYTimes](https://developer.nytimes.com/docs/books-product/1/overview) Book API to get the NYTimes Best Sellers Lists to show a Summer Reading List on a Website.  
+This is my Surfs Up Hacks Project. I'm using [NYTimes](https://developer.nytimes.com/docs/books-product/1/overview) Book API to fetch the NYTimes Best Sellers Lists to show a Summer Reading List on a Website for the user can see.  
 
 I used [Create React App](https://github.com/facebook/create-react-app) for this project and created a node.js server to host the project and fetch the api.
 
