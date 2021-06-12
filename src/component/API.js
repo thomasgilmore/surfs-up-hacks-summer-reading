@@ -24,7 +24,7 @@ class API extends Component {
             // console.log(res.data);
             let apiResponse = res.data;
             let books = apiResponse.results.books;
-            // console.log(books);
+            console.log(books);
             let booksRows = [];
 
             books.forEach(book => {
