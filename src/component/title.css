@@ -20,17 +20,29 @@
     .headingDiv {
         background-position: 100% 0;
     }
+
+    .heading {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 400px) {
     .headingDiv {
         background-position: 100% -20px;
     }
+
+    .heading {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 500px) {
     .headingDiv {
         background-position: 100% -70px;
+    }
+
+    .heading {
+        font-size: 2.5em;
     }
 }
 
@@ -42,66 +54,72 @@
 
 @media (min-width: 700px) {
     .headingDiv {
-        background-position: 100% -125px;
+        background-position: 100% -145px;
     }
 }
 
 @media (min-width: 800px) {
     .headingDiv {
-        background-position: 100% -145px;
+        background-position: 100% -175px;
     }
 }
 
 @media (min-width: 900px) {
     .headingDiv {
-        background-position: 100% -165px;
+        background-position: 100% -200px;
     }
 }
 
 @media (min-width: 1000px) {
     .headingDiv {
-        background-position: 100% -190px;
-    }
-}
-
-@media (min-width: 1150px) {
-    .headingDiv {
-        background-position: 100% -200px;
-    }
-}
-
-@media (min-width: 1300px) {
-    .headingDiv {
         background-position: 100% -220px;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
     .headingDiv {
         background-position: 100% -240px;
     }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1200px) {
     .headingDiv {
         background-position: 100% -260px;
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
     .headingDiv {
         background-position: 100% -270px;
     }
 }
 
+@media (min-width: 1400px) {
+    .headingDiv {
+        background-position: 100% -300px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .headingDiv {
+        background-position: 100% -320px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .headingDiv {
+        background-position: 100% -340px;
+    }
+}
+
 @media (min-width: 1700px) {
     .headingDiv {
-        background-position: 100% -280px;
+        background-position: 100% -360px;
     }
 }
 
 @media (min-width: 2000px) {
     .headingDiv {
-        background-position: 100% -290px;
+        background-position: 100% -380px;
     }
 }

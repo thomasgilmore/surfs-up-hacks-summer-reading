@@ -21,10 +21,10 @@ class API extends Component {
         fetch(url)
         .then(res => res.json())
         .then(res => {
-            console.log(res.data);
+            // console.log(res.data);
             let apiResponse = res.data;
             let books = apiResponse.results.books;
-            console.log(books);
+            // console.log(books);
             let booksRows = [];
 
             books.forEach(book => {
